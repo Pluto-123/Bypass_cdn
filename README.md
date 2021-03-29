@@ -4,11 +4,12 @@
 
 ## 简介
 ### 项目结构
-    img
+![项目结构](https://github.com/Pluto-123/Bypass_cdn/blob/main/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84.png)
 ### 说明
  - 魔改了lijiejie的subDomainsBrute用于子域名扫描
  - 根据HTTP响应包长度在扫出的地址范围内寻找真实IP
- - 
+ - requirements.txt可能不全，缺什么需要手动安装一下
+ - 输入的目标必须以`http/https`开头
 ## 示例
 ```
 PS C:\Users\SH\Desktop\Bypass_cdn> python3 .\scan.py https://www.ghxi.com/
@@ -49,5 +50,6 @@ PS C:\Users\SH\Desktop\Bypass_cdn> python3 .\scan.py https://www.runoob.com/
 [+] 找到可能的IP地址
 61.168.100.115
 ```
-> 考虑到很多网站的真实IP所在主机为反向代理，会根据host头转发到后端的负载均衡服务器，上面输出中ip后面跟着的两个数字，就是有host和无host的响应包大小
+> 考虑到很多网站的真实IP所在主机为反向代理，会根据host头转发到后端的负载均衡服务器
+> 上面输出中ip后面跟着的两个数字，就是有host和无host的响应包大小
 
