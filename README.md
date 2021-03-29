@@ -1,4 +1,5 @@
 # Bypass_cdn
+![](https://img.shields.io/badge/python-3.8-blue)
 绕过CDN查找网站的真实IP地址
 
 
