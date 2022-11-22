@@ -248,7 +248,7 @@ class bypass_cdn(object):
 		print("[+] 奇特ping测试...")
 		self.special_ping()
 		print("[+] DNS解析历史记录...")
-		self.domain_history()
+		# self.domain_history()
 		print("[+] 子域名扫描...")
 		self.subscan()
 		'''
